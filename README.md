@@ -32,7 +32,10 @@ El proyecto hace uso de las siguientes bibliotecas externas:
 
 ## Contacto
 Si tienes alguna pregunta o problema, por favor [crea un issue](https://github.com/tu_usuario/SSF/issues) en este repositorio.
+danielc2203@gmail.com
 
 ¡Gracias por tu colaboración!
 
-*Nota: El contenido de este archivo README es una simulación y no representa un proyecto real. Los enlaces y recursos mencionados son ficticios y no están disponibles en ningún sitio web real.*
+*Nota: El contenido de este repositorio es una simulación y no representa un proyecto real. Los enlaces y recursos mencionados son ficticios y no están disponibles en ningún sitio web real.*
+
+
