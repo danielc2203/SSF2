@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>SSF</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://npmcdn.com/flickity@2/dist/flickity.css" rel="stylesheet" />
+    <style>
+        .titulo { 
+            font-size: 20px;
+            color: #36c;
+            font-family: "Montserrat";
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 50px;
+            margin-left: 100px;
+            line-height: 24px;
+        }
+
+        .img-subsidios{
+            max-width: 100%;
+            height: auto;
+            margin-top: 15px;
+        }
+
+        /* Carrousel 1 */
+
+        .carouselD {
+        background: #FAFAFA;
+        height: 200px; /* set gallery height */
+        }
+        .carousel-A {
+        width: 300px;
+        height: 100%; /* inherit height from gallery */
+        margin-right: 5px;
+        margin-left: 5px;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        counter-increment: carousel-A;
+        }
+        .d2 {
+            width: 100% !important;
+        }
+
+        /* comunicados de prensa */
+        .comunicados{
+            background-color: #E8EFFC;
+            padding-top: 5px;
+            margin-top: 15px;
+        }
+
+        /*Carousel Entidades*/
+        .entidades {
+            background-color: #E8EFFC;
+        }
+        .carousel-B {
+        margin-right: 5px;
+        margin-left: 5px;
+        }
+        .B1 {
+            width: 250px !important;
+            margin: 5px !important;
+        }
+
+        @media (max-width: 576px) {
+            .card-text {
+                font-size: 12px;
+            }
+            .card-title {
+                font-size: 13px;
+            }
+            .img-n1{
+                margin: 20px 0px 20px 15px;
+            }
+        }
+    </style>
+
+    <!-- Celulares -->
+    <style type="text/css"> 
+        .my-carousel {
+        position:relative;
+        margin-top:60px;
+        }
+
+        .my-carousel-cell {
+        width: 360px;
+        height: 700px;
+        margin-right: 20px;
+        background: transparent;
+        border-radius: 25px;
+        counter-increment: carousel-cell;
+        }
+
+        .my-carousel-prev-next-button.previous {
+        background-color: #0074ff;
+        color: #fff;
+        }
+
+        .my-carousel-prev-next-button.next {
+        background-color: #0074ff;
+        color: #fff;
+        }
+
+        .my-carousel-prev-next-button {
+        width: 50px;
+        height: 50px;
+        }
+
+    .flickity-button {
+        position: absolute;
+        background: hsl(234, 90%, 41%);
+        border: none;
+        color: #ffffff;
+        }
+
+        .flickity-button:hover {
+        position: absolute;
+        background: hsl(0, 0%, 100%);
+        border: none;
+        color: #000000;
+        }
+
+        img.my-screen {
+        width: 90%;
+        }
+
+        .my-carousel-cell.is-selected {
+        opacity: 1;
+        transform: none;
+        }
+
+        .my-carousel-cell {
+        transform: scale(0.6);
+        opacity: 0.6;
+        transition: opacity 0.225s ease-in-out, transform 0.225s ease-in-out;
+        }
+
+        @media only screen and (max-width: 900px) {
+        .my-carousel:before {
+            height: 400px;
+            width: 300px;
+            top: -2vw;
+        }
+        }
+
+        @media (max-width: 576px) {
+        .my-carousel:before {
+        height: 300px;
+        width: 200px;
+        top: -2vw;
+        }
+        img.my-screen {
+        width: 80%;
+        margin: 30px;
+        }
+        }
+    </style>
+
+
+</head>
+  <body>
+
+
+    <!-- Inicio de codigo -->
+
+    <div class="container-fluid">
+
+        <section class="misionalidad">
+            <h3 class="titulo">Nuestra misionalidad</h3>
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col m-1">
+                      <div class="card text-center " style=" background-color:#e8effc; border-color: #e8effc;">
+                        <div class="rounded-circle mx-auto m-2" style=" background-color:#fff; ">
+                          <a href="https://ssf.gov.co/web/guest/misión" target="_blank">
+                            <img class="card-img-top mx-auto" style="width:80px; align-items: center;" alt="SSF" src="https://ssf.gov.co/documents/20127/1430827/historia.png">
+                          </a>
+                        </div>
+                        <div class="card-body p-0">
+                            <a href="https://ssf.gov.co/web/guest/misión" target="_blank">
+                            <h5 class="card-title" style="color: #007bff;">Historia</h5>
+                            </a>
+                        </div>
+                        
+                      </div>
+                    </div>
+
+                    <div class="col m-1">
+                      <div class="card text-center " style=" background-color:#e8effc; border-color: #e8effc;">
+                        <div class="rounded-circle mx-auto m-2" style=" background-color:#fff;">
+                            <a href="https://ssf.gov.co/web/guest/objetivos" target="_blank">
+                            <img class="card-img-top mx-auto" style="width:80px; align-items: center;" alt="SSF" src="https://ssf.gov.co/documents/20127/1430827/lista-de-verificacion.png">
+                            </a>
+                        </div>
+                        <div class="card-body p-0">
+                            <a href="https://ssf.gov.co/web/guest/objetivos" target="_blank">
+                                <h5 class="card-title" style="color: #007bff;">Objetivos</h5>
+                            </a>
+                          
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col m-1">
+                      <div class="card text-center " style=" background-color:#e8effc; border-color: #e8effc;">
+                        <div class="rounded-circle mx-auto m-2" style=" background-color:#fff;">
+                            <a href="https://ssf.gov.co/web/guest/misión" target="_blank">
+                                <img class="card-img-top mx-auto" style="width:80px; align-items: center;" alt="SSF" src="https://ssf.gov.co/documents/20127/1430827/mision.png">
+                            </a>
+                        </div>
+                        <div class="card-body p-0">
+                            <a href="https://ssf.gov.co/web/guest/misión" target="_blank">
+                                <h5 class="card-title" style="color: #007bff;">Misión</h5>
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col m-1">
+                        <div class="card text-center " style=" background-color:#e8effc; border-color: #e8effc;">
+                          <div class="rounded-circle mx-auto m-2" style=" background-color:#fff;">
+                            <a href="https://ssf.gov.co/web/guest/visión" target="_blank">
+                                <img class="card-img-top mx-auto" style="width:80px; align-items: center;" alt="SSF" src="https://ssf.gov.co/documents/20127/1430827/vision-estrategica.png">
+                            </a>
+                          </div>
+                          <div class="card-body p-0">
+                            <a href="https://ssf.gov.co/web/guest/visión" target="_blank">
+                                <h5 class="card-title" style="color: #007bff;">Visión</h5>
+                            </a>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col m-1">
+                        <div class="card text-center " style=" background-color:#e8effc; border-color: #e8effc;">
+                          <div class="rounded-circle mx-auto m-2" style=" background-color:#fff;">
+                            <a href="https://www.ssf.gov.co/web/guest/gestor-normativo" target="_blank">
+                                <img class="card-img-top mx-auto" style="width:80px; align-items: center;" alt="SSF" src="https://ssf.gov.co/documents/20127/1430827/aprobado.png">
+                            </a>
+                          </div>
+                          <div class="card-body p-0">
+                            <a href="https://www.ssf.gov.co/web/guest/gestor-normativo" target="_blank">
+                                <h5 class="card-title" style="color: #007bff;">Normatividad</h5>
+                            </a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subsidios">
+
+            <div class="container-fluid">
+                <a href="https://ssf.gov.co/subsidios1">
+                    <img alt="Responsive image" class="img-subsidios" src="https://ssf.gov.co/documents/20127/1430827/BANNER+WEB+SSF+SUBSIDIOS+CCF.jpg" />
+                </a>
+            </div>
+        
+            <section class="carrouselD1 m-5">
+                <div class="container-fluid"><!-- Flickity HTML init -->
+                    <div class="carouselD" data-flickity="{ &quot;freeScroll&quot;: true, &quot;wrapAround&quot;: true, &quot;autoPlay&quot;: 1500 }">
+                        <div class="carousel-A "><a href="https://ssf.gov.co/cajas-de-compensación-familiar"><img class="d2" src="https://ssf.gov.co/documents/20127/1430827/slide001.png" /> </a></div>
+                        <div class="carousel-A "><a href="https://ssf.gov.co/cajas-de-compensación-familiar-intervenidas"><img class="d2" src="https://ssf.gov.co/documents/20127/1430827/slide002.jpg" /> </a></div>
+                        <div class="carousel-A "><a href="https://gtss.ssf.gov.co/SedeElectronica/"><img class="d2" src="https://ssf.gov.co/documents/20127/1430827/slide003.jpeg" /> </a></div>
+                        <div class="carousel-A "><a href="https://ssf.gov.co/capacitaciones"><img class="d2" src="https://ssf.gov.co/documents/20127/1430827/slide004.jpeg" /> </a></div>
+                        <div class="carousel-A "><a href="https://ssf.gov.co/lenguaje-incluyente"><img class="d2" src="https://ssf.gov.co/documents/20127/1430827/slide005.jpeg" /> </a></div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="imagenesD">
+                <div class="container">
+                    <div class="row justify-content-md-center">
+                        
+                        <div class=" col-md-4 col-sm-6 mt-1 "><a href="https://gtss.ssf.gov.co/SedeElectronica/tramites/browser.do?formAction=btList&amp;s=0&amp;order=0#no-back-button"><img alt="" class="card-img" src="https://ssf.gov.co/documents/20127/1430827/PQRSFpeque%C3%B1o.png" /> </a></div>
+                        <div class=" col-md-4 col-sm-6 mt-1"><a href="https://ssf.gov.co/certificado-de-existencia-y-representaci%C3%B3n-legal"><img alt="" class="card-img" src="https://ssf.gov.co/documents/20127/1430827/Certificadopeque%C3%B1o.png" /> </a></div>
+                        <div class=" col-md-4 col-sm-6 mt-1 "><a href="https://observatorio.ssf.gov.co/"><img alt="" class="card-img" src="https://ssf.gov.co/documents/20127/1430827/observatorio.jpeg" /> </a></div>
+                    
+                        
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        <section class="galerias">
+            <h3 class="titulo">La Superintendencia en imágenes</h3>
+
+                <!-- Inicio de carrusel de imágenes -->
+                
+                <div class="container text-center">
+                <div class="row">
+                <div class="col-6"><!-- Carousel de imágenes -->
+                <div class="carousel slide carousel-fade" data-ride="carousel" id="carousel-example-2"><!-- Indicadores -->
+                <ol class="carousel-indicators">
+                    <li class="active" data-slide-to="0" data-target="#carousel-example-2">&nbsp;</li>
+                    <li data-slide-to="1" data-target="#carousel-example-2">&nbsp;</li>
+                    <li data-slide-to="2" data-target="#carousel-example-2">&nbsp;</li>
+                </ol>
+                <!-- Slides -->
+                
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                <div class="view" style="width: 100%; height: 0; padding-bottom: 56.25%; position: relative; overflow: hidden;"><img alt="Second slide" class="d-block img-fluid" src="https://www.ssf.gov.co/documents/20127/1328565/Superintndende+con+emprendimiento+sobre+Ruta+Macondo.jpg/e0fe116b-79f8-2dd7-653e-610f5f0eaba8?t=1690294674017" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-style: solid; border-color: blue; padding-left: 0px;" /></div>
+                
+                <div class="carousel-caption">
+                <h3 class="h3-responsive">Ruta Macondo</h3>
+                
+                <p>Superintendente con emprendimiento</p>
+                </div>
+                </div>
+                
+                <div class="carousel-item">
+                <div class="view" style="width: 100%; height: 0; padding-bottom: 56.25%; position: relative; overflow: hidden;"><img alt="Second slide" class="d-block w-100" src="https://www.ssf.gov.co/documents/20127/1328565/Superintendente+en+Canastas+de+Paz+Guajira.jpg/d5d5b786-0a64-e8be-02a3-0495ba1d314f?t=1690294717762" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-style: solid; border-color: blue; padding-left: 0px;" /></div>
+                
+                <div class="carousel-caption">
+                <h3 class="h3-responsive">Canastas de Paz</h3>
+                
+                <p>Superintendente en la Guajira</p>
+                </div>
+                </div>
+                
+                <div class="carousel-item">
+                <div class="view" style="width: 100%; height: 0; padding-bottom: 56.25%; position: relative; overflow: hidden;"><img alt="Third slide" class="d-block w-100" src="https://www.ssf.gov.co/documents/20127/1328565/Superintendente+en+el+Meta.jpg/d58eda35-6891-704f-d4fb-519ef6c7f9c9?t=1690294739368" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-style: solid; border-color: blue; padding-left: 0px;" /></div>
+                
+                <div class="carousel-caption">
+                <h3 class="h3-responsive">Canastas de Paz</h3>
+                
+                <p>Superintendente en el Meta</p>
+                </div>
+                </div>
+                </div>
+                <!-- Controles --><a class="carousel-control-prev" data-slide="prev" href="#carousel-example-2" role="button"><span class="sr-only">Anterior</span> </a> <a class="carousel-control-next" data-slide="next" href="#carousel-example-2" role="button"> <span class="sr-only">Siguiente</span> </a></div>
+                <!-- Fin del Carousel de imágenes --></div>
+                
+                <div class="col-6"><!-- Carousel de videos -->
+                <div class="carousel slide carousel-fade" data-ride="carousel" id="video-carousel-example2"><!-- Indicadores -->
+                <ol class="carousel-indicators">
+                    <li class="active" data-slide-to="0" data-target="#video-carousel-example2">&nbsp;</li>
+                    <li data-slide-to="1" data-target="#video-carousel-example2">&nbsp;</li>
+                    <li data-slide-to="2" data-target="#video-carousel-example2">&nbsp;</li>
+                </ol>
+                <!-- Slides -->
+                
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                <div class="embed-responsive embed-responsive-16by9" style="border-style: solid; border-color: blue;"><iframe allowfullscreen="" class="embed-responsive-item" src="https://www.youtube.com/embed/oPMF8sU3rwk"></iframe></div>
+                
+                <div class="carousel-caption">
+                <h3 class="h3-responsive">SSF</h3>
+                
+                <p>2023</p>
+                </div>
+                </div>
+                
+                <div class="carousel-item">
+                <div class="embed-responsive embed-responsive-16by9" style="border-style: solid; border-color: blue;"><iframe allowfullscreen="" class="embed-responsive-item" src="https://www.youtube.com/embed/kdpr7T3E9OM"></iframe></div>
+                
+                <div class="carousel-caption">
+                <h3 class="h3-responsive">SSF</h3>
+                
+                <p>2023</p>
+                </div>
+                </div>
+                
+                <div class="carousel-item">
+                <div class="embed-responsive embed-responsive-16by9" style="border-style: solid; border-color: blue;"><iframe allowfullscreen="" class="embed-responsive-item" src="https://www.youtube.com/embed/IVOtgJTvm4w"></iframe></div>
+                
+                <div class="carousel-caption">
+                <h3 class="h3-responsive">SSF</h3>
+                
+                <p>2023</p>
+                </div>
+                </div>
+                </div>
+                <!-- Controles --><a class="carousel-control-prev" data-slide="prev" href="#video-carousel-example2" role="button"><span class="sr-only">Anterior</span> </a> <a class="carousel-control-next" data-slide="next" href="#video-carousel-example2" role="button"> <span class="sr-only">Siguiente</span> </a></div>
+                <!-- Fin del Carousel de videos --></div>
+                </div>
+                </div>
+                <!-- Final del Carrusel -->
+        </section>
+
+        <section class="comunicados">
+
+            <h3 class="titulo">Comunicados de prensa</h3>
+                <!-- inicio de noticias -->
+                
+                <div class="container ">
+                <div class="row ">
+                <div class="col-lg-6 ">
+                <div class="card m-2"><img alt="Imagen Grande" class="card-img-top" src="https://ssf.gov.co/documents/20127/107472/empleo+cajas+mayo+2023++ssf.jpg" />
+                <div class="card-body">
+                <h4 class="card-title"><a href="https://ssf.gov.co/web/guest/noticia-1">EMPLEO: 524 MIL PERSONAS CONSIGUIERON TRABAJO A TRAVÉS DE LAS CAJAS DE COMPENSACIÓN FAMILIAR </a></h4>
+                
+                <p class="card-text" style="text-align: justify;">Bogotá, 30 de mayo de 2023. – Cifras de la Superintendencia del Subsidio Familiar indican que, a abril de 2023, 524.088 personas consiguieron trabajo a través de las Agencias de Gestión y Colocación de Empleo de las 42 Cajas de Compensación Familiar del país. El Superintendente del Subsidio Familiar, Luis Guillermo Pérez Casas, precisó que, "en el reporte entregado por las Cajas a la Supersubsidio, se señala que estas agencias recibieron 1.009.070 hojas de vida, de las cuales, el 51,9%, es decir, 524.088 lograron con éxito obtener un empleo formal".</p>
+                </div>
+                </div>
+                </div>
+                
+                <div class="col-lg-6">
+                <div class="card m-2">
+                <div class="row no-gutters">
+                <div class="col-5 d-flex"><img alt="SSF" class="img-fluid img-n1"  src="https://ssf.gov.co/documents/20127/107472/educacion+cajas+compensacion+familiar+mayo+2023.jpg" /></div>
+                
+                <div class="col-7">
+                <div class="card-body">
+                <h5 class="card-title"><a href="https://ssf.gov.co/noticia-2">$69 MIL MILLONES SERÁN INVERTIDOS POR LAS CAJAS DE COMPENSACIÓN ... </a></h5>
+                
+                <p class="card-text"><small class="text-muted">03/05/2023</small></p>
+                </div>
+                </div>
+                </div>
+                </div>
+                
+                <div class="card m-2">
+                <div class="row">
+                <div class="col-5 d-flex"><img alt="SSF" class="img-fluid img-n1" src="https://ssf.gov.co/documents/20127/107472/minsalud+carolina+corcho+supersubsidio+luis+guillermo+perez+casas.jpg" /></div>
+                
+                <div class="col-7">
+                <div class="card-body">
+                <h5 class="card-title"><a href="https://ssf.gov.co/noticia-3">MINSALUD SE REUNIÓ CON LA SUPERSUBSIDIO Y LAS CAJAS PARA ESTUDIAR ...</a></h5>
+                
+                <p class="card-text"><small class="text-muted">13/04/2023</small></p>
+                </div>
+                </div>
+                </div>
+                </div>
+                
+                <div class="card m-2">
+                <div class="row no-gutters">
+                <div class="col-5 d-flex"><img alt="SSF" class="img-fluid img-n1" src="https://ssf.gov.co/documents/20127/107472/supersubsidio+ssf+noticias+oficial.jpg" /></div>
+                
+                <div class="col-7">
+                <div class="card-body">
+                <h5 class="card-title"><a href="https://ssf.gov.co/noticia-4">LA SUPERSUBSIDIO ORDENÓ LA INTERVENCIÓN DE COMFIAR, LA CAJA DE ... </a></h5>
+                
+                <p class="card-text"><small class="text-muted">30/03/2023</small></p>
+                </div>
+                </div>
+                </div>
+                </div>
+                
+                <div class="card m-2">
+                <div class="row no-gutters">
+                    <div class="col-5 d-flex"><img alt="SSF" class="img-fluid img-n1" src="https://ssf.gov.co/documents/20127/107472/cifras+mujeres+empleadas+supersubsidio.jpg" /></div>
+                
+                <div class="col-7">
+                <div class="card-body">
+                <h5 class="card-title"><a href="https://ssf.gov.co/noticia-5">EN COLOMBIA, 187.966 MUJERES GANAN MENOS QUE LOS HOMBRES </a></h5>
+                
+                <p class="card-text"><small class="text-muted">15/03/2023</small></p>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+
+                <!-- Final de Noticias -->
+
+        </section>
+
+        <section class="Audios">
+            <h3 class="titulo">La Superintendencia en audios</h3>
+                <iframe allow="autoplay" frameborder="no" height="166" scrolling="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1548118456&amp;color=0b00ff" width="100%"></iframe>
+                <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/supersubsidiofamiliar2014" style="color: #cccccc; text-decoration: none;" target="_blank" title="SuperSubsidio">SuperSubsidio</a> · <a href="https://soundcloud.com/supersubsidiofamiliar2014/superintendente-sobre-gustavo-petro-urrego" style="color: #cccccc; text-decoration: none;" target="_blank" title="Superintendente sobre Gustavo Petro Urrego">Superintendente sobre Gustavo Petro Urrego</a></div>
+        </section>
+
+        <section class="redes">
+        <h3 class="titulo">La Superintendencia en redes sociales</h3>
+
+        <div class="container">
+        <div class="my-carousel" data-flickity="{&quot;autoPlay&quot;: true, &quot;wrapAround&quot;: true}">
+        <div class="my-carousel-cell"><a href="https://www.facebook.com/SuperSubsidio/?locale=es_LA" target="_blank"><img class="my-screen" src="https://ssf.gov.co/documents/20127/1328565/FacebookA.png/92c5ea56-0b23-1daf-4f55-cb32e706f176?t=1687750096461" /></a></div>
+
+        <div class="my-carousel-cell"><a href="https://www.instagram.com/supersubsidio/?hl=es" target="_blank"><img class="my-screen" src="https://ssf.gov.co/documents/20127/1328565/InstagramA.png/8b9410b8-5cdb-f671-a113-7d30a9cd348d?t=1687750061802" /></a></div>
+
+        <div class="my-carousel-cell"><a href="https://twitter.com/Supersubsidio" target="_blank"><img class="my-screen" src="https://ssf.gov.co/documents/20127/1328565/ssfA.png/ff8ab3c4-b981-e58f-03cf-b8e74668cf4c?t=1687750120112" /></a></div>
+
+        <div class="my-carousel-cell"><a href="https://www.youtube.com/@supersubsidiocol" target="_blank"><img class="my-screen" src="https://ssf.gov.co/documents/20127/1328565/Youtube.png/b983d903-201e-17c9-90e9-cee8bcdd274b?t=1689087696690" /></a></div>
+
+        <div class="my-carousel-cell"><a href="https://www.facebook.com/SuperSubsidio/?locale=es_LA" target="_blank"><img class="my-screen" src="https://ssf.gov.co/documents/20127/1328565/FacebookA.png/92c5ea56-0b23-1daf-4f55-cb32e706f176?t=1687750096461" /></a></div>
+
+        <div class="my-carousel-cell"><a href="https://twitter.com/Supersubsidio" target="_blank"><img class="my-screen" src="https://ssf.gov.co/documents/20127/1328565/ssfA.png/ff8ab3c4-b981-e58f-03cf-b8e74668cf4c?t=1687750120112" /></a></div>
+        </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
+
+        </section>
+
+        <section class="iniciativas">
+
+                <p class="titulo">Iniciativas que apoya la Superintendencia</p>
+
+                <div class="container">
+                <div class="row  no-gutters">
+                <div class="col"><a href="http://" rel="noopener noreferrer" target="_blank"><img alt="..." class="img-fluid p-1" src="https://ssf.gov.co/documents/20127/1328565/Pacto+por+la+Vivienda.jpg/b096bf84-1f24-554a-ecf0-bcfd024f5c3f?t=1689922252974" /></a></div>
+                
+                <div class="col"><a href="http://" rel="noopener noreferrer" target="_blank"><img alt="..." class="img-fluid p-1" src="https://ssf.gov.co/documents/20127/1328565/Firma+del+compromiso+por+el+trabajo+decente.jpg/1e457370-eb5c-167f-328f-199655542e28?t=1689922288253" /></a></div>
+                
+                <div class="col"><a href="http://" rel="noopener noreferrer" target="_blank"><img alt="..." class="img-fluid p-1" src="https://ssf.gov.co/documents/20127/1328565/Pacto+por+la+NI%C3%B1ez+infancia+y+adolescencia.jpg/6eb0cd1a-9d96-0160-525f-d78fac7e916c?t=1689922314027" /></a></div>
+                
+                <div class="col"><a href="http://" rel="noopener noreferrer" target="_blank"><img alt="..." class="img-fluid p-1" src="https://ssf.gov.co/documents/20127/1328565/Canastas+de+Paz.jpg/a09f9a2a-f6c2-080d-ddbe-0c1f22f7fbbc?t=1689922336230" /></a></div>
+                </div>
+                </div>
+                
+        </section>
+
+        <section class="entidades" style="background-color: #e8effc;">
+            <div class="container-fluid mt-5"><!-- Flickity HTML init -->
+                <div class="carouselE" data-flickity="{ &quot;wrapAround&quot;: true, &quot;autoPlay&quot;: 3000 }">
+                    <div class="carousel-B "><a href="http://www.urnadecristal.gov.co/"><img class="B1" alt="img" src="https://ssf.gov.co/documents/20127/1430827/articles-146567_logo.png" /> </a></div>
+                    <div class="carousel-B "><a href="https://www.asocajas.org.co/"><img class="B1" alt="img" src="https://ssf.gov.co/documents/20127/1430827/asocajas-logo.png" /> </a></div>
+                    <div class="carousel-B "><a href="https://convenio.cajasinfronteras.com/Paginas/default.aspx"><img class="B1" alt="img" src="https://ssf.gov.co/documents/20127/1430827/caja-sin-fronteras.png" /> </a></div>
+                    <div class="carousel-B "><a href="https://www.contraloria.gov.co/"><img class="B1" alt="img" src="https://ssf.gov.co/documents/20127/1430827/Contralor%C3%ADa_2.png" /> </a></div>
+                    <div class="carousel-B "><a href="https://petro.presidencia.gov.co"><img class="B1" alt="img" src="https://ssf.gov.co/documents/20127/1430827/precidencia.png" /> </a></div>
+                    <div class="carousel-B "><a href="https://fedecajas.com/home"><img class="B1" alt="img" src="https://ssf.gov.co/documents/20127/1430827/fedecajas.png" /> </a></div>
+                    <div class="carousel-B "><a href="https://www.contraloria.gov.co/"><img class="B1" alt="img" src="https://ssf.gov.co/documents/20127/1430827/Contralor%C3%ADa_2.png" /> </a></div>
+                    <div class="carousel-B "><a href="https://www.mintrabajo.gov.co/web/guest/inicio"><img class="B1" alt="img" src="https://app2.mintrabajo.gov.co/censosindical/Images/MinTrabajo-Header-LogoClear.png" /> </a></div>
+                </div>
+            </div>
+            
+        </section> 
+    </div>
+
+
+    <!-- Fin de codigo -->
+      
+    <!-- Optional JavaScript -->
+    <!-- JS del carousel -->
+    <script src='https://npmcdn.com/flickity@2/dist/flickity.pkgd.js'></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
